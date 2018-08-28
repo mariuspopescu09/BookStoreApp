@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical"
+        tools:context=".EditorActivity">
+
+        <ImageView
+            android:id="@+id/product_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/i_book" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/head1"
+                style="@style/CategoryStyle"
+                android:text="@string/book" />
+
+            <EditText
+                android:id="@+id/ProdName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toRightOf="@id/head1"
+                android:hint="@string/Name"
+                android:inputType="textCapWords" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/head2"
+                style="@style/CategoryStyle"
+                android:text="@string/price" />
+
+            <EditText
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toRightOf="@id/head2"
+                android:hint="@string/price"
+                android:inputType="numberDecimal"
+                android:text="@string/_0" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/head3"
+                    style="@style/CategoryStyle"
+                    android:text="@string/quantity" />
+
+                <EditText
+                    android:id="@+id/Quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginleft2"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_toRightOf="@id/head3"
+                    android:hint="@string/quantity"
+                    android:inputType="numberDecimal"
+                    android:text="@string/_0" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="@dimen/ButtonSize"
+                android:layout_height="@dimen/ButtonSize"
+                android:onClick="minus"
+                android:text="@string/minus" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="@dimen/ButtonSize"
+                android:layout_height="@dimen/ButtonSize"
+                android:onClick="plus"
+                android:text="@string/plus" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/head4"
+                style="@style/CategoryStyle"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/SuppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toRightOf="@id/head4"
+                android:hint="@string/supplier_name"
+                android:inputType="textCapWords" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginleft2">
+
+            <TextView
+                android:id="@+id/head5"
+                style="@style/CategoryStyle"
+                android:paddingBottom="@dimen/marginleft2"
+                android:text="@string/phone" />
+
+            <EditText
+                android:id="@+id/SupplierPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/marginleft2"
+                android:layout_marginLeft="@dimen/marginleft2"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toRightOf="@id/head5"
+                android:hint="@string/supplier_phone_number"
+                android:inputType="phone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginleft"
+                android:layout_marginTop="@dimen/marginleft"
+                android:onClick="order"
+                android:text="@string/order" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

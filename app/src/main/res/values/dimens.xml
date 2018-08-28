@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="textsize1">16sp</dimen>
+    <dimen name="priceSize">16sp</dimen>
+    <dimen name="marginleft">32dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="marginleft2">10dp</dimen>
+    <dimen name="ButtonSize">52dp</dimen>
+    <dimen name="textSize2">26sp</dimen>
+</resources>
